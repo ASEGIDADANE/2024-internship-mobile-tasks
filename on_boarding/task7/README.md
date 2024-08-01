@@ -29,8 +29,6 @@ State Update: Returns results to BLoC.
 State Emission: Emits new state to UI.
 Folder Structure
 plaintext
-
-Copy
 lib/
 ├── data/
 │   ├── models/
@@ -47,6 +45,9 @@ lib/
 │   ├── widgets/
 │
 ├── main.dart
+
+
+
 Test Driven Development (TDD)
 The project follows TDD principles with unit, widget, and integration tests for each layer.
 
