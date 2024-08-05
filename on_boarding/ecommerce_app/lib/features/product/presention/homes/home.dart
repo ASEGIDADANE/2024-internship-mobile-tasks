@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task6/homes/showproduct.dart';
+import 'package:task6/features/product/presention/homes/showproduct.dart';
 import 'profile.dart';
 
 class Home extends StatelessWidget {

@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:task6/homes/shopingcard.dart';
+import 'package:task6/features/product/presention/homes/shopingcard.dart';
 // import '../../Shared/ShopingCard.dart';
 
 class ShowProduct extends StatelessWidget {

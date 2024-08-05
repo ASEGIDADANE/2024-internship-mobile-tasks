@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:task6/homes/showproduct.dart';
-import 'package:task6/search/about_product.dart';
-import './searchType.dart';
+import 'package:task6/features/product/presention/homes/showproduct.dart';
+import 'package:task6/features/product/presention/search/about_product.dart';
+import 'searchType.dart';
 
 
 class Searchproduct extends StatelessWidget {

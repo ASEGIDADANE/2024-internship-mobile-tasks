@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task6/Domain/usecases/Get_Product.dart';
+import 'package:task6/features/product/Domain/usecases/Get_Product.dart';
 
 // Import the generated mock file that contains the MockProductRepository
 import '../../helpers/test_helper.mocks.dart';

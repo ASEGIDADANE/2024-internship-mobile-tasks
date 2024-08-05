@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task6/homes/home.dart';
-import './detail//detail.dart';
-import './addProduct//addProduct.dart';
-import './search/search.dart';
+import 'package:task6/features/product/presention/homes/home.dart';
+import 'features/product/presention/detail/detail.dart';
+import 'features/product/presention/addProduct/addProduct.dart';
+import 'features/product/presention/search/search.dart';
 
 // import 'package:task6/homes/home.dart';
 

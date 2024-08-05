@@ -1,16 +1,17 @@
-# task6
+## Project Overview
 
-A new Flutter project.
+This project follows Clean Architecture principles to maintain a clear separation of concerns and make the codebase more modular and testable.
 
-## Getting Started
+### Project Structure
 
-This project is a starting point for a Flutter application.
+- `core`: Contains shared components, entities, and error handling logic.
+- `features`: Contains feature-specific modules.
+  - `ecommerce`: Main module for the Ecommerce feature.
 
-A few resources to get you started if this is your first Flutter project:
+### Data Flow
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Data Layer**: Data models such as `ProductModel` are responsible for handling data conversion to and from JSON.
+2. **Domain Layer**: Business logic and entities like `Product` are defined here.
+3. **Presentation Layer**: Views and UI-related logic reside here.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For more detailed information, refer to the codebase and documentation within the project.
