@@ -1,37 +1,34 @@
 import 'dart:convert';
 
+import 'package:shared_preferences/shared_preferences.dart';
+
 import '../../../../core/errors/exception.dart';
 import '../models/Product_model.dart';
 
-import 'package:shared_preferences/shared_preferences.dart';
-// import 'package:task_6/core/error/exception.dart';
+// import '../../../../../core/errors/exceptions.dart';
+// import '../../models/product_model.dart';
 
-// import '../model/product_model.dart';
-
-
-
-abstract class ProductLocalDataSource {
-  Future<List<ProductModel>> getCachedProducts();
-  Future<bool> cacheProduct(ProductModel productToCache);
+abstract class LocalDataSource {
+  Future<ProductModel> getProduct();
+  Future<void> cacheProduct();
 }
 
-class ProductLocalDataSourceImpl extends ProductLocalDataSource {
-  final SharedPreferences pref;
+class LocalDataSourceImpl implements LocalDataSource {
+  final SharedPreferences sharedPreferences;
 
-  ProductLocalDataSourceImpl({required this.pref});
+  LocalDataSourceImpl({required this.sharedPreferences});
+
   @override
-  Future<bool> cacheProduct(ProductModel productToCache) {
+  Future<void> cacheProduct() {
     throw UnimplementedError();
   }
 
   @override
-  Future<List<ProductModel>> getCachedProducts() {
-    final jsonList = pref.getStringList('cachedProduct');
+  Future<ProductModel> getProduct() {
+    final jsonString = sharedPreferences.getString('cachedProduct');
 
-    if (jsonList != null) {
-      return Future.value(jsonList
-          .map((jsonString) => ProductModel.fromJson(jsonDecode(jsonString)))
-          .toList());
+    if (jsonString != null) {
+      return Future.value(ProductModel.fromJson(json.decode(jsonString)));
     }
 
     throw CacheException();
