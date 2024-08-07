@@ -1,25 +1,37 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:task6/features/product/Domain/usecases/Get_Product.dart';
+// import 'package:dartz/dartz.dart';
+// import 'package:flutter_test/flutter_test.dart';
+// import 'package:mockito/mockito.dart';
+// import 'package:task6/features/product/domain/entities/product.dart';
+// import 'package:task6/features/product/domain/repositories/Product_Repository.dart';
+// import 'package:task6/features/product/domain/usecases/get_product.dart';
 
-// Import the generated mock file that contains the MockProductRepository
-import '../../helpers/test_helper.mocks.dart';
+// import '../../helpers/test_helper.mocks.dart';
 
-void main() {
-  MockProductRepository mockProductRepository;
-  // ignore: unused_local_variable
-  GetProductUseCase getProductUseCase;
+// void main() {
+//   late MockProductRepository mockProductRepository;
+//   late GetProductUseCase getProductRepository;
 
-  setUp(() {
-    mockProductRepository = MockProductRepository();
-    getProductUseCase = GetProductUseCase(mockProductRepository);
-  });
+//   setUp(() {
+//     mockProductRepository = MockProductRepository();
+//     getProductRepository = GetProductUseCase(mockProductRepository as ProductRepository);
+//   });
 
-  test('Test GetProductUseCase', () {
-    // Your test logic here
-    // Mock any necessary behavior on mockProductRepository using Mockito syntax
-    // For example: when(mockProductRepository.someMethod()).thenAnswer((_) => Future.value(someValue));
+//   final productDetails = Product(
+//     productId: '1',
+//     name: 'shoe',
+//     description: 'leather shoe',
+//     price: 200,
+//     imageUrl: '',
+//     id: 22,
+//   );
+//   const productid = '1';
 
-    // Example assertion to test a hypothetical method in GetProductUseCase
-    // expect(getProductUseCase.someMethod(), expectedValue);
-  });
-}
+//   test('should get product', () async {
+//     when(mockProductRepository.getProductById(productid as int))
+//         .thenAnswer((_) async => Right(productDetails));
+
+//     final result = await getProductRepository.execute(productid as int);
+    
+//     expect(result, Right(productDetails));
+//   });
+// }

@@ -1,12 +1,56 @@
+// import 'package:task6/features/product/domain/entities/product.dart';
 
-// import '../../Domain/entity/ecommerce_entity.dart';
+// class ProductModel extends Product {
+  
+//   ProductModel ({
+//     required int id,
+//     required String name,
+//     required String description,
+//     required String imageUrl,
+//     required double price,
+//   }) : super(
+//     id: id,
+//     name: name,
+//     description: description,
+//     imageUrl: imageUrl,
+//     price: price,
+//   );
 
-import '../../domain/entities/product.dart';
+//   factory ProductModel.fromJson(Map<String, dynamic> json) {
+//     return ProductModel(
+//       id: json['id'],
+//       name: json['name'],
+//       description: json['description'],
+//       imageUrl: json['imageUrl'],
+//       price: json['price'].toDouble(),
+//     );
+//   }
+
+//   Map<String, dynamic> toJson() {
+//     return {
+//       'id': id,
+//       'name': name,
+//       'description': description,
+//       'imageUrl': imageUrl,
+//       'price': price,
+//     };
+//   }
+
+//   Product toEntity() {
+//     return Product(
+//       id: this.id,
+//       name: this.name,
+//       description: this.description,
+//       imageUrl: this.imageUrl,
+//       price: this.price,
+//     );
+//   }
+// }
+import 'package:task6/features/product/domain/entities/product.dart';
 
 class ProductModel extends Product {
-  
   ProductModel({
-    required int id, // Change id type from String to int
+    required int id,
     required String name,
     required String description,
     required String imageUrl,
@@ -23,17 +67,29 @@ class ProductModel extends Product {
     return ProductModel(
       id: json['id'],
       name: json['name'],
-      description: json['disc'],
+      description: json['description'],
       imageUrl: json['imageUrl'],
       price: json['price'].toDouble(),
     );
   }
 
-  Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-    'description': description,
-    'imageUrl': imageUrl,
-    'price': price,
-  };
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'description': description,
+      'imageUrl': imageUrl,
+      'price': price,
+    };
+  }
+
+  Product toEntity() {
+    return Product(
+      id: this.id,
+      name: this.name,
+      description: this.description,
+      imageUrl: this.imageUrl,
+      price: this.price,
+    );
+  }
 }
