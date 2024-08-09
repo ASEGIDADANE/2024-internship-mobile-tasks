@@ -50,18 +50,12 @@ import 'package:task6/features/product/domain/entities/product.dart';
 
 class ProductModel extends Product {
   ProductModel({
-    required int id,
-    required String name,
-    required String description,
-    required String imageUrl,
-    required double price,
-  }) : super(
-    id: id,
-    name: name,
-    description: description,
-    imageUrl: imageUrl,
-    price: price,
-  );
+    required super.id,
+    required super.name,
+    required super.description,
+    required super.imageUrl,
+    required super.price,
+  });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
@@ -93,3 +87,6 @@ class ProductModel extends Product {
     );
   }
 }
+
+
+  // static Future<ProductModel> fromJsondata(decode) {}

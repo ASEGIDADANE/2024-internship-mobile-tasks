@@ -144,8 +144,7 @@ class MockProductRemoteDataSource extends _i1.Mock
     _i1.throwOnMissingStub(this);
   }
 
-  @override
-  _i6.Future<_i3.ProductModel> getProductById(String? id) =>
+  _i6.Future<_i3.ProductModel> getProduct(String? id) =>
       (super.noSuchMethod(
         Invocation.method(
           #getProductById,
@@ -183,6 +182,7 @@ class MockHttpClient extends _i1.Mock implements _i4.Client {
   MockHttpClient() {
     _i1.throwOnMissingStub(this);
   }
+  
 
   @override
   _i6.Future<_i4.Response> head(
