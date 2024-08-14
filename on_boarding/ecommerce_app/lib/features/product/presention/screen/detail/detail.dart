@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task6/features/product/presention/detail/button.dart';
-import 'package:task6/features/product/presention/detail/description.dart';
-import 'package:task6/features/product/presention/detail/detailcomponent.dart';
-import 'package:task6/features/product/presention/detail/sSzeRow.dart';
+import 'package:task6/features/product/presention/screen/detail/button.dart';
+import 'package:task6/features/product/presention/screen/detail/description.dart';
+import 'package:task6/features/product/presention/screen/detail/detailcomponent.dart';
+import 'package:task6/features/product/presention/screen/detail/sSzeRow.dart';
 
 
 class Detail extends StatelessWidget {

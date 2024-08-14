@@ -9,7 +9,7 @@ class UpdateProductUseCase {
 
   UpdateProductUseCase(this.productRepository);
 
-  Future<void> execute(Product product) {
+  Future<void> execute(Product product, productEntity) {
     return productRepository.updateProduct(product);
   }
 }

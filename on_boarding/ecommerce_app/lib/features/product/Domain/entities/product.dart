@@ -38,6 +38,8 @@ class Product {
   String toString() {
     return 'Product{id: $id, name: $name, description: $description, price: $price, imageUrl: $imageUrl}';
   }
+
+  void fold(Null Function(dynamic failure) param0, Null Function(dynamic data) param1) {}
 }
 // import 'package:equatable/equatable.dart';
 

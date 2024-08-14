@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task6/features/product/presention/homes/showproduct.dart';
-import 'package:task6/features/product/presention/search/about_product.dart';
+import 'package:task6/features/product/presention/screen/homes/showproduct.dart';
+import 'package:task6/features/product/presention/screen/search/about_product.dart';
 import 'searchType.dart';
 
 
